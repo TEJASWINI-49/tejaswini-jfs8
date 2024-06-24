@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      .a {
+        position: absolute;
+        height: 150px;
+        width: 150px;
+        top: 0px;
+        left: 40px;
+        background-color: lightblue;
+        align-content: center;
+        text-align: center;
+        z-index: 0;
+      }
+      .b {
+        position: absolute;
+        height: 150px;
+        width: 150px;
+        top: 70px;
+        left: 60px;
+        background-color: lightpink;
+        align-content: center;
+        text-align: center;
+        z-index: 1;
+      }
+      .c {
+        position: absolute;
+        height: 150px;
+        width: 150px;
+        top: 140px;
+        left: 80px;
+        background-color: lightyellow;
+        align-content: center;
+        text-align: center;
+        z-index: 0;
+      }
+      .a:hover {
+        z-index: 2;
+        border-color: black;
+        border-width: 1px;
+        border: solid;
+      }
+      .b:hover {
+        z-index: 2;
+        border-color: black;
+        border-width: 1px;
+        border: solid;
+      }
+      .c:hover {
+        z-index: 2;
+        border-color: black;
+        border-width: 1px;
+        border: solid;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="a">Layer 1</div>
+    <div class="b">Layer2</div>
+    <div class="c">Layer3</div>
+  </body>
+</html>
