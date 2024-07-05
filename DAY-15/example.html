@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      @media (min-width: 1200px) {
+        .device {
+          display: grid;
+          grid-template-columns: 10% 10% 10% 48% 10% auto;
+          height: 60px;
+          width: 100%;
+          background-color: black;
+          text-align: center;
+          align-content: center;
+        }
+        .device div {
+          color: white;
+          padding: 10px;
+          background-color: black;
+          border: 1px solid white;
+          border-radius: 30px;
+          font-weight: bold;
+          text-align: center;
+        }
+        .a1 {
+          position: relative;
+          top: -20px;
+        }
+        .a2 {
+          position: relative;
+          top: 20px;
+          left: -82%;
+        }
+      }
+      @media (min-width: 600px) and (max-width: 1200px) {
+        .device {
+          display: grid;
+          grid-template-columns: 10% 10% 48% 10% auto;
+
+          background-color: black;
+        }
+        .device div {
+          color: white;
+          margin-left: 20px;
+        }
+        .a1 {
+        }
+        .a2 {
+        }
+        .ab {
+          display: none;
+        }
+      }
+      @media (max-width: 600px) {
+        .device {
+          background-color: lightblue;
+          width: 100%;
+          padding: 20px;
+          display: grid;
+          grid-template-columns: auto auto auto auto;
+          position: absolute;
+          bottom: 5px;
+          border-radius: 30px;
+          border-bottom-left-radius: 0px;
+          border-bottom-right-radius: 0px;
+          box-shadow: 0px 0px 10px darkblue;
+        }
+        .device div {
+          background-color: black;
+          color: white;
+          font-weight: bold;
+          border: solid;
+          border-color: white;
+          padding: 10px;
+          width: 80px;
+          border-radius: 30px;
+          text-align: center;
+        }
+        .ab {
+          display: none;
+        }
+        .ac {
+          display: none;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="device">
+      <div>Home</div>
+      <div>Movies</div>
+      <div>Play</div>
+      <div class="ab">Music</div>
+      <div class="a1 ab">Signup</div>
+      <div class="a2 ab">Login</div>
+    </div>
+  </body>
+</html>
