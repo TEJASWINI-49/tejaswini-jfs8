@@ -1,0 +1,63 @@
+<html>
+  <head>
+    <title>Animations 2</title>
+    <style>
+      div {
+        border: solid;
+        height: 100px;
+        width: 100px;
+        animation-name: move;
+        animation-duration: 5s;
+        animation-delay: 1s;
+        border-radius: 50px;
+        animation-direction: move;
+        animation-timing-function: ease;
+        animation-fill-mode: backwards;
+        animation-iteration-count: infinite;
+      }
+      @keyframes move {
+        0% {
+          right: -90%;
+          top: 0px;
+          background-color: orange;
+          border-color: black;
+          box-shadow: 0px 0px 10px orange;
+        }
+        25% {
+          right: -90%;
+          top: 0px;
+          background-color: darkorange;
+          border-color: black;
+          height: 200px;
+          width: 300px;
+          box-shadow: 0px 0px 10px orange;
+        }
+        50% {
+          right: -90%;
+          top: 500px;
+          background-color: darkorange;
+          border-color: black;
+          box-shadow: 0px 0px 15px darkorange;
+        }
+        75% {
+          right: -90%;
+          top: 500px;
+          background-color: darkorange;
+          border-color: black;
+          box-shadow: 0px 0px 15px darkorange;
+        }
+        100% {
+          right: -90%;
+          top: 500px;
+          background-color: darkorange;
+          border-color: black;
+          box-shadow: 0px 0px 15px darkorange;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <div></div>
+  </body>
+</html>

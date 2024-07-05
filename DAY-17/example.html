@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Animations</title>
+    <style>
+      img {
+        height: 150px;
+        width: 150px;
+      }
+      .hand1 {
+        position: absolute;
+        animation-name: teja1;
+        animation-duration: 2s;
+        animation-delay: 1s;
+        animation-iteration-count: 1;
+
+        animation-direction: normal;
+
+        animation-timing-function: ease-in-out;
+      }
+      .hand2 {
+        position: absolute;
+        animation-name: teja2;
+        animation-duration: 2s;
+        animation-delay: 1s;
+        animation-iteration-count: 1;
+        animation-timing-function: ease-in-out;
+        animation-direction: normal;
+      }
+
+      @keyframes teja1 {
+        0% {
+          top: 0%;
+          left: 0%;
+        }
+        50% {
+          top: 0%;
+          left: 40%;
+        }
+      }
+      @keyframes teja2 {
+        0% {
+          top: 0%;
+          right: 0%;
+        }
+        50% {
+          top: 0%;
+          right: 41%;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="hand1">
+      <img
+        src="https://em-content.zobj.net/thumbs/320/apple/354/right-facing-fist_1f91c.png"
+      />
+    </div>
+    <div class="hand2">
+      <img
+        src="https://em-content.zobj.net/thumbs/240/apple/325/left-facing-fist_1f91b.png"
+      />
+    </div>
+  </body>
+</html>

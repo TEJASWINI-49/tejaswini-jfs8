@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Animations</title>
+    <style>
+      div {
+        position: relative;
+        border: solid;
+        height: 300px;
+        width: 200px;
+        background-color: blueviolet;
+        animation-name: teja;
+        animation-duration: 5s;
+        animation-delay: 1s;
+        animation-iteration-count: 1;
+        animation-direction: reverse;
+        animation-timing-function: ease-in-out;
+        animation-fill-mode: backwards;
+      }
+      @keyframes teja {
+        from {
+          background-color: green;
+          height: 300px;
+          width: 200px;
+        }
+        to {
+          background-color: yellow;
+          height: 200px;
+          width: 300px;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <div></div>
+  </body>
+</html>
